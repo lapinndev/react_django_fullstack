@@ -12,7 +12,7 @@ import 'swiper/css/scrollbar';
 export const App = () => {
   const [posts, setPosts] = useState<{ title: string; channel: string }[]>([]);
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/').then((res) => {
+    axios.get('http://maksip83.beget.tech/').then((res) => {
       setPosts(res.data);
     });
   }, []);
